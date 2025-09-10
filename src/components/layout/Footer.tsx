@@ -1,7 +1,7 @@
 "use client";
 
 import { companyInfo } from "@/data/companyInfo";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Code } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -97,8 +97,25 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/20 py-4 text-center text-sm text-gray-200">
-        © {new Date().getFullYear()} {companyInfo.name}. All Rights Reserved.
+      {/* Bottom Bar */}
+      <div className="border-t border-white/20 py-4 text-center text-sm text-gray-200 flex flex-col md:flex-row items-center justify-center gap-2">
+        <span>
+          © {new Date().getFullYear()} {companyInfo.name}. All Rights Reserved.
+        </span>
+
+        {/* Developer Credit */}
+        <span className="flex items-center gap-1 text-xs text-gray-400">
+          <Code className="w-4 h-4" />
+          Built by{" "}
+          <Link
+            href="https://biniamportfolio.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-secondary"
+          >
+            BinaChapi
+          </Link>
+        </span>
       </div>
     </footer>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import { ServiceProps } from "@/types/types";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import React from "react";
 
 const cardVariants = {
@@ -14,7 +14,7 @@ const listVariants = {
   hover: {
     opacity: 1,
     maxHeight: 300,
-    transition: { staggerChildren: 0.1, duration: 0.5, ease: "easeInOut" },
+    transition: { staggerChildren: 0.1, duration: 0.5, ease: easeInOut },
   },
 };
 

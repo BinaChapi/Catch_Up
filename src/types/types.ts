@@ -38,3 +38,8 @@ export type VisionMissionProps = {
   textColor?: string;
   className?: string;
 };
+
+export type LoadingContextType = {
+  loaded: boolean;
+  setLoaded: (value: boolean) => void;
+};

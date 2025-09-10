@@ -1,30 +1,51 @@
 "use client";
 import Image from "next/image";
 import Button from "../ui/Button";
-import { Ellipsis, Send } from "lucide-react";
+import { BookOpen, Send } from "lucide-react";
 import { useTypewriter } from "@/hooks/typewriter";
 import { companyInfo } from "@/data/companyInfo";
+import { useState, useEffect } from "react";
+import { useLoading } from "@/context/LoadingProvider";
 
 export default function Hero() {
   const strategyText = useTypewriter("Strategy", 120, 2000);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+   const { setLoaded } = useLoading();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % companyInfo.HeroImages.length);
+    }, 20000);
+
+    return () => clearInterval(interval);
+    
+  }, []);
 
   return (
     <section
       id="home"
       className="relative min-h-[100vh] flex items-center justify-center text-white"
     >
-      
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/images/CatchUp_1.png"
-          alt="CatchUp background"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
+      {companyInfo.HeroImages.map((src, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 -z-10 transition-opacity duration-1000 ease-in-out ${
+            index === currentIndex ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <Image
+            src={src}
+            alt={`Hero background ${index + 1}`}
+            fill
+            className="object-cover"
+            priority={index === 0}
+            onLoad={index === 0 ? () => setLoaded(true) : undefined}
+          />
+        </div>
+      ))}
+
       <div className="max-w-7xl mx-auto text-center lg:text-left flex flex-col lg:flex-row items-center gap-12 w-full">
-        
         <div className="w-full lg:w-7/12 p-8 rounded-r-2xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow-lg text-white">
             Your Growth, <br className="hidden md:inline" />
@@ -49,9 +70,9 @@ export default function Hero() {
             <Button
               as="a"
               href="#about"
-              variant="ghost"
+              variant="secondary"
               size="sm"
-              rightIcon={<Ellipsis />}
+              rightIcon={<BookOpen size={18}/>}
             >
               Learn More
             </Button>

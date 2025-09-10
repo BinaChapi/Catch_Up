@@ -153,7 +153,18 @@ export const companyInfo = {
     },
   ],
 
-  Clients:[],
+  Clients:[
+    '/images/Ethio_Tel.png',
+    '/images/ZemZem_Bank.png',
+    '/images/Rammis_Bank.png', 
+    '/images/Hijra_Bank.png', 
+    '/images/Santim_Pay.png', 
+    '/images/addis_systems.jpg',
+    '/images/Shelf.jpg',
+    '/images/HexLabs.png',
+    '/images/Next_Step.png',
+    '/images/Light_City.png',
+  ],
 
   whyChooseUs: [
     {
@@ -192,4 +203,12 @@ export const companyInfo = {
       linkedin: "https://linkedin.com/company/catchup",
     },
   },
+
+
+    HeroImages: [
+      '/images/Hero1.png',
+      '/images/Hero2.png',
+      '/images/Hero3.png',
+      '/images/Hero4.png'
+  ],
 };

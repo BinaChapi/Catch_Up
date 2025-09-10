@@ -63,7 +63,7 @@ export default function NavLinks() {
     <header
       className={`fixed left-0 right-0 top-0 z-50 border-b transform transition-all duration-300 ${
         hidden ? "-translate-y-full" : "translate-y-0"
-      } ${atTop ? "bg-primary border-transparent" : "bg-white/95 backdrop-blur-sm border-gray-100"}`}
+      } ${atTop ? "bg-transparent border-transparent" : "bg-white/95 backdrop-blur-sm border-gray-100"}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-16 flex items-center justify-between">

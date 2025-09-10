@@ -6,7 +6,7 @@ import { companyInfo } from "@/data/companyInfo";
 export default function ServicesSection() {
   const services = companyInfo.services
   return (
-    <section id="services" className="py-20">
+    <section id="services" className="py-10 bg-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16">

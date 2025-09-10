@@ -5,7 +5,7 @@ import { companyInfo } from "@/data/companyInfo";
 
 export default function VisionMissionSection() {
   return (
-    <section id="vision" className="py-20 bg-gray-50">
+    <section id="vision" className="py-10 bg-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         

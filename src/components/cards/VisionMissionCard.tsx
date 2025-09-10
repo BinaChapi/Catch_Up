@@ -4,8 +4,6 @@ import { cn } from "@/lib/utils";
 import { VisionMissionProps } from "@/types/types";
 import React from "react";
 
-
-
 export default function VisionMissionCard({
   title,
   desc,

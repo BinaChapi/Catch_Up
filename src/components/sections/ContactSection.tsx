@@ -32,7 +32,7 @@ export default function ContactSection() {
   }, [state.succeeded, email]);
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-10 bg-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12">

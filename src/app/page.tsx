@@ -7,7 +7,6 @@ import Hero from "@/components/sections/Hero";
 import ServicesSection from "@/components/sections/ServicesSection";
 import VisionMissionSection from "@/components/sections/VisionMissionSection";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import { companyInfo } from "@/data/companyInfo";
 
 export default function Home() {
   return (
@@ -24,7 +23,7 @@ export default function Home() {
 
         <WhyChooseUs />
 
-        {companyInfo.Clients.length > 0? <ClientsSection /> : null}
+        <ClientsSection />
 
         <ContactSection />
       </main>

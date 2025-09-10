@@ -1,18 +1,19 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import NavLinks from "@/components/layout/NavBar";
 import { companyInfo } from "@/data/companyInfo";
 import LoadingProvider from "@/context/LoadingProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
   subsets: ["latin"],
+  variable: "--font-montserrat",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const bord = localFont({
+  src: "../../public/fonts/Bord.ttf",
+  variable: "--font-bord",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +26,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${montserrat.variable} ${bord.variable} antialiased`}>
         <LoadingProvider>
           <NavLinks />
           {children}

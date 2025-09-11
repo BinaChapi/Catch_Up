@@ -13,13 +13,17 @@ export function useLoading() {
   return context;
 }
 
-export default function LoadingProvider({ children }: { children: React.ReactNode }) {
+export default function LoadingProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [loaded, setLoaded] = useState(false);
 
   return (
     <LoadingContext.Provider value={{ loaded, setLoaded }}>
       {!loaded && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-white text-primary">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
           <div className="animate-spin h-16 w-16 border-4 border-secondary border-t-transparent rounded-full"></div>
         </div>
       )}

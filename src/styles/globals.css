@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0D1B30;
-  --color-secondary: #FF6F00;
+  --color-primary: #0d1b30;
+  --color-secondary: #ff6f00;
   --color-muted: #6b7280;
   --color-bg: #ffffff;
 }
@@ -18,7 +18,12 @@ body {
   font-family: var(--font-montserrat), sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-bord), sans-serif;
 }
 
@@ -36,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes scroll {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);

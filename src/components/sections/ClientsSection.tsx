@@ -15,8 +15,8 @@ export default function ClientsSection() {
         </p>
 
         <div className="relative overflow-hidden">
-          <div className="flex animate-scroll gap-12">
-
+          <div className="flex w-max animate-scroll gap-12">
+            {/* duplicate client list so animation loops smoothly */}
             {[...clients, ...clients].map((client, i) => (
               <div
                 key={i}
@@ -27,7 +27,7 @@ export default function ClientsSection() {
                   alt={`Client logo ${i}`}
                   width={160}
                   height={96}
-                  className="object-contain max-h-20 transition"
+                  className="object-contain max-h-20"
                 />
               </div>
             ))}

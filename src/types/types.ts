@@ -11,6 +11,13 @@ export type ServiceProps = {
   className?: string;
 };
 
+export type Service = {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+  items?: string[];
+};
+
 export type DecorativeProps = {
   className?: string;
   size?: "md" | "lg" | "xl";

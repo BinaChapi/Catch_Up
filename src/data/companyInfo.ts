@@ -10,6 +10,7 @@ import {
   Award,
   Users,
   Handshake,
+  Code,
 } from "lucide-react";
 
 export const companyInfo = {
@@ -17,17 +18,17 @@ export const companyInfo = {
   sName: "Catch Up",
   tagline: "Your Growth, Our Strategy",
 
-  about1: `    At Catch Up Marketing & Advertising PLC, we blend creativity with
-              strategy to deliver marketing solutions that drive real business
-              results. Founded with a passion for innovation, we've grown
-              into a dynamic team of marketing professionals who understand the
-              Ethiopian market and global marketing trends.`,
+  about1: `At Catch Up Marketing & Advertising PLC, we blend creativity with
+            strategy to deliver marketing solutions that drive real business
+            results. Founded with a passion for innovation, we've grown
+            into a dynamic team of marketing professionals who understand the
+            Ethiopian market and global marketing trends.`,
 
-  about2: `     Our approach is collaborative and client-focused. We take the time
-                to understand your business goals, target audience, and
-                competitive landscape before crafting customized marketing
-                strategies that help you stand out in today's crowded
-                marketplace.`,
+  about2: `Our approach is collaborative and client-focused. We take the time
+            to understand your business goals, target audience, and
+            competitive landscape before crafting customized marketing
+            strategies that help you stand out in today's crowded
+            marketplace.`,
 
   heroAbout: `We don't just market — we create experiences that connect
             brands with their audience in meaningful ways. Bold strategies,
@@ -36,8 +37,10 @@ export const companyInfo = {
   aboutHeader: `We're a full-service marketing agency based in Addis Ababa,
             Ethiopia, dedicated to helping businesses grow through strategic
             marketing solutions.`,
-  ServiceHeader: ` We offer comprehensive marketing solutions tailored to meet your specific business needs and objectives.`,
-  WhyChooseUsHeader: ` What sets Catch Up Marketing apart from other agencies in Ethiopia and beyond.`,
+
+  ServiceHeader: `We offer comprehensive marketing solutions tailored to meet your specific business needs and objectives.`,
+
+  WhyChooseUsHeader: `What sets Catch Up Marketing apart from other agencies in Ethiopia and beyond.`,
 
   MissionVisionHeader: `Our guiding principles that drive everything we do at Catch Up Marketing & Advertising.`,
 
@@ -50,7 +53,7 @@ export const companyInfo = {
   mission: `To empower organizations with bold ideas, powerful marketing strategies, 
   and transformative campaigns that connect brands to people and people to brands.`,
 
-  FooterHeader:`A full-service marketing agency dedicated to helping businesses grow
+  FooterHeader: `A full-service marketing agency dedicated to helping businesses grow
             through strategic marketing solutions in Ethiopia and beyond.`,
 
   coreValues: [
@@ -152,29 +155,29 @@ export const companyInfo = {
       ],
     },
     {
-  icon: Code,
-  title: "Web Development",
-  description:
-    "Custom websites and applications tailored for performance, scalability, and user experience.",
-  items: [
-    "Responsive website design",
-    "Full-stack web development",
-    "API integration",
-  ],
-},
+      icon: Code,
+      title: "Web Development",
+      description:
+        "Custom websites and applications tailored for performance, scalability, and user experience.",
+      items: [
+        "Responsive website design",
+        "Full-stack web development",
+        "API integration",
+      ],
+    },
   ],
 
-  Clients:[
-    '/images/Ethio_Tel.png',
-    '/images/ZemZem_Bank.png',
-    '/images/Rammis_Bank.png', 
-    '/images/Hijra_Bank.png', 
-    '/images/Santim_Pay.png', 
-    '/images/addis_systems.jpg',
-    '/images/Shelf.jpg',
-    '/images/HexLabs.png',
-    '/images/Next_Step.png',
-    '/images/Light_City.png',
+  Clients: [
+    "/images/Ethio_Tel.png",
+    "/images/ZemZem_Bank.png",
+    "/images/Rammis_Bank.png",
+    "/images/Hijra_Bank.png",
+    "/images/Santim_Pay.png",
+    "/images/addis_systems.jpg",
+    "/images/Shelf.jpg",
+    "/images/HexLabs.png",
+    "/images/Next_Step.png",
+    "/images/Light_City.png",
   ],
 
   whyChooseUs: [
@@ -203,9 +206,9 @@ export const companyInfo = {
   contact: {
     address:
       "Yeka Sub City, Genet Commercial Building, 6th Floor, Addis Ababa, Ethiopia",
-    phones: ["2519252422475 ", "251931115555"],
+    phones: ["2519252422475", "251931115555"],
     email: "catchuptrading@gmail.com",
-    WorkingHours:`Monday - Friday: 9:00 AM - 6:00 PM`,
+    WorkingHours: `Monday - Friday: 9:00 AM - 6:00 PM`,
     website: "",
     socials: {
       facebook: "https://facebook.com/catchup",
@@ -215,11 +218,10 @@ export const companyInfo = {
     },
   },
 
-
-    HeroImages: [
-      '/images/Hero1.png',
-      '/images/Hero2.png',
-      '/images/Hero3.png',
-      '/images/Hero4.png'
+  HeroImages: [
+    "/images/Hero1.png",
+    "/images/Hero2.png",
+    "/images/Hero3.png",
+    "/images/Hero4.png",
   ],
 };

@@ -151,6 +151,17 @@ export const companyInfo = {
         "Growth opportunity consulting",
       ],
     },
+    {
+  icon: Code,
+  title: "Web Development",
+  description:
+    "Custom websites and applications tailored for performance, scalability, and user experience.",
+  items: [
+    "Responsive website design",
+    "Full-stack web development",
+    "API integration",
+  ],
+},
   ],
 
   Clients:[

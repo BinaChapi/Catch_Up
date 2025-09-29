@@ -219,9 +219,9 @@ export const companyInfo = {
   },
 
   HeroImages: [
-    "/images/Hero1.png",
     "/images/Hero2.png",
-    "/images/Hero3.png",
+    "/images/Hero1.png",
     "/images/Hero4.png",
+    "/images/Hero3.png",
   ],
 };
